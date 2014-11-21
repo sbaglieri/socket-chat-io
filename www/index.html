@@ -1,0 +1,79 @@
+<!--<!DOCTYPE html>-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, target-densitydpi=medium-dpi">
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        
+        <header>
+            <button id="menu">
+                --
+            </button>
+        </header>
+
+        <!--<div id="content">-->
+        <div id="messagescontainer">
+            <!--<ul id="messages">-->
+            <div id="messages">
+<!--                <li>Message 1</li>
+                <li>Message 2</li>
+                <li>Message 3</li>
+                <li>Message 4</li>
+                <li>Message 5</li>
+                <li>Message 6</li>
+                <li>Message 7</li>
+                <li>Message 9</li>
+                <li>Message 10</li>
+                <li>Message 11</li>
+                <li>Message 12</li>
+                <li>Message 13</li>
+                <li>Message 14</li>
+                <li>Message 15</li>
+                <li>Message 16</li>
+                <li>Message 17</li>-->
+            <!--</ul>-->
+            </div>
+        </div>
+
+
+        <div id="formdiv">
+            <form action="">
+                <div id="inputdiv">
+                    <input id="m" autocomplete="off" />
+                </div>
+                <div id="buttondiv">
+                    <button>Send</button>
+                </div>
+            </form>
+        </div>
+        <!--</div>-->
+
+        <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+        <script>
+            var isApp = document.URL.indexOf('http://') === -1 && document.URL.indexOf('https://') === -1;
+            if (isApp) {
+                // PhoneGap application
+                var s = document.createElement('script');
+                s.setAttribute('src', "cordova.js");
+                document.body.appendChild(s);
+                var s2 = document.createElement('script');
+                s2.setAttribute('src', "js/main.js");
+                document.body.appendChild(s2);
+            } else {
+                // Web page
+                var s = document.createElement('script');
+                s.setAttribute('src', "js/main.js");
+                document.body.appendChild(s);
+            }
+        </script>
+        <!--<script type="text/javascript" src="cordova.js"></script>-->
+        <!--<script src="js/main.js"></script>-->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+    </body>
+</html>
